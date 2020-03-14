@@ -1,0 +1,738 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Linked-In API",
+    "description": "Linked-In API",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+  "/user/register": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "Create a New User in System",
+        "parameters": [
+          {
+            "name": "user",
+            "in": "body",
+            "description": "User that we want to create",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {}     
+     
+      }
+    },
+
+    "/user/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "Login in E-Commerce",
+        "parameters": [
+          {
+            "name": "user",
+            "in": "body",
+            "description": "User that we want to create",
+            "schema": {
+              "$ref": "#/definitions/User_login"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {}     
+     
+      }
+    },
+
+    "/admin/login": {
+      "post": {
+        "tags": [
+          "Admin Panel"
+        ],
+        "description": "Login in E-Commerce",
+        "parameters": [
+          {
+            "name": "user",
+            "in": "body",
+            "description": "User that we want to create",
+            "schema": {
+              "$ref": "#/definitions/Admin_login"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {}     
+     
+      }
+    },
+
+
+  "/edit/test": {
+    "post": {
+      "tags": [
+        "Edit Profile"
+      ],
+      "description": "edit Profile of Linked-In",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "U",
+          "schema": {
+            "$ref": "#/definitions/edittest"
+          }
+        },
+        {
+          "name": "authorization",
+          "in": "header"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {}     
+   
+    }
+  },
+  
+  "/edit/education": {
+    "post": {
+      "tags": [
+        "Edit Profile"
+      ],
+      "description": "List Category in E-Commerce",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "User that we want to create",
+          "schema": {
+            "$ref": "#/definitions/editeducation"
+          }
+
+        },
+        {
+          "name": "authorization",
+          "in": "header"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {}     
+    }
+  },
+
+  
+  "/edit/introduction": {
+    "post": {
+      "tags": [
+        "Edit Profile"
+      ],
+      "description": "List Category in E-Commerce",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "User that we want to create",
+          "schema": {
+            "$ref": "#/definitions/editintroduction"
+          }
+
+        },
+        {
+          "name": "authorization",
+          "in": "header"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {}     
+    }
+  },
+
+  "/edit/languages": {
+    "post": {
+      "tags": [
+        "Edit Profile"
+      ],
+      "description": "List Category in E-Commerce",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "User that we want to create",
+          "schema": {
+            "$ref": "#/definitions/editlanguages"
+          }
+
+        },
+        {
+          "name": "authorization",
+          "in": "header"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {}     
+    }
+  },
+
+
+  "/edit/license": {
+    "post": {
+      "tags": [
+        "Edit Profile"
+      ],
+      "description": "List Category in E-Commerce",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "User that we want to create",
+          "schema": {
+            "$ref": "#/definitions/editlicense"
+          }
+
+        },
+        {
+          "name": "authorization",
+          "in": "header"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {}     
+    }
+  },
+
+  
+  "/edit/location": {
+    "post": {
+      "tags": [
+        "Edit Profile"
+      ],
+      "description": "List Category in E-Commerce",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "User that we want to create",
+          "schema": {
+            "$ref": "#/definitions/editlocation"
+          }
+
+        },
+        {
+          "name": "authorization",
+          "in": "header"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {}     
+    }
+  },
+
+  "/edit/project": {
+    "post": {
+      "tags": [
+        "Edit Profile"
+      ],
+      "description": "List Category in E-Commerce",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "User that we want to create",
+          "schema": {
+            "$ref": "#/definitions/editproject"
+          }
+
+        },
+        {
+          "name": "authorization",
+          "in": "header"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {}     
+    }
+  },
+
+  "/edit/workexperince": {
+    "post": {
+      "tags": [
+        "Edit Profile"
+      ],
+      "description": "List Category in E-Commerce",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "User that we want to create",
+          "schema": {
+            "$ref": "#/definitions/editworkexperince"
+          }
+
+        },
+        {
+          "name": "authorization",
+          "in": "header"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {}     
+    }
+  },
+
+  
+  "/edit/skills": {
+    "post": {
+      "tags": [
+        "Edit Profile"
+      ],
+      "description": "List Category in E-Commerce",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "User that we want to create",
+          "schema": {
+            "$ref": "#/definitions/editskills"
+          }
+
+        },
+        {
+          "name": "authorization",
+          "in": "header"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {}     
+    }
+  },
+
+
+  "/message/add": {
+    "post": {
+      "tags": [
+        "Message API's"
+      ],
+      "produces":["multipart/form-data"],
+      "parameters": [
+        {
+          "name": "authorization",
+          "in": "header",
+          "required": true
+        },
+        {
+          "name": "messageData",
+          "in": "formData",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "receiver_id",
+          "in": "formData",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "image",
+          "in": "formData",
+          "type": "file"
+        }
+        
+      ],
+      "responses": {}     
+    }
+    },
+
+      "/message/listmessages": {
+        "post": {
+          "tags": [
+            "Message API's"
+          ],
+          "description": "Carts in E-Commerce",
+          "parameters": [
+            {
+              "name": "user",
+              "in": "body",
+              "description": "Cart's we want to Add",
+              "schema": {
+                "$ref": "#/definitions/listMessage"
+              }
+            },
+            {
+              "name": "authorization",
+              "in": "header",
+              "required": true
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {}     
+        }
+        },
+    
+      "/message/listsenders": {
+        "post": {
+          "tags": [
+            "Message API's"
+          ],
+          "description": "Carts in E-Commerce",
+          "parameters": [
+            {
+              "name": "user",
+              "in": "body",
+              "description": "Cart's we want to Add",
+              "schema": {
+                "$ref": "#/definitions/listMessage"
+              }
+            },
+            {
+              "name": "authorization",
+              "in": "header",
+              "required": true
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {}     
+        }
+        }
+
+},
+
+  "definitions": { 
+    "User": {
+      "required": ["name","email","password","phone"],
+      "properties": {
+        "first_name": {
+          "type": "string",
+          "required": true
+        },
+        "last_name": {
+          "type": "string",
+          "required": true
+        },
+        "email": {
+          "type": "string",
+          "uniqueItems": true,
+          "required": true
+        },
+        "password": {
+          "type": "string",
+          "required": true
+        },
+        "phone": {
+          "type": "number",
+          "uniqueItems": true,
+          "required": true
+        },
+        "recent_company": {
+          "type": "string"
+        },
+        "recent_job_title": {
+          "type": "string"
+        }
+
+      }
+    },
+
+    "User_login": {
+      "required": ["email","password"],
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      }
+    },
+
+    
+    "Admin_login": {
+      "required": ["email","password"],
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      }
+    },
+
+    "edittest": {
+      "required": ["name","score","start_month","start_year","user_id"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "score": {
+          "type": "number"
+        },
+        "start_month": {
+          "type": "string"
+        },
+        "start_year": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "string"
+        }
+    }
+  },  
+  
+  "editeducation": {
+    "required": ["student","college","degree","specialization","start_year","end_year","user_id"],
+    "properties": {
+      "student": {
+        "type": "boolean"
+      },
+      "college": {
+        "type": "number"
+      },
+      "degree": {
+        "type": "string"
+      },
+      "specialization": {
+        "type": "string"
+      },
+      "start_year": {
+        "type": "string"
+      },
+      "end_year": {
+        "type": "string"
+      },
+      "user_id": {
+        "type": "string"
+      }
+  }
+},  
+
+"editintroduction": {
+      "required": ["name","current_position","user_id"],
+      "properties": {
+        "headline": {
+          "type": "string"
+        },
+        "current_position": {
+          "type": "number"
+        },
+        "user_id": {
+          "type": "string"
+        }
+    }
+  },
+
+  "editlanguages": {
+    "required": ["name","user_id"],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      
+      "user_id": {
+        "type": "string"
+      }
+  }
+},
+
+"editlicense": {
+    "required": ["name","issuing_organization","expires","start_month","start_year","end_month","end_year","user_id"],
+    "properties": {
+      "name": {
+        "type": "boolean"
+      },
+      "issuing_organization": {
+        "type": "number"
+      },
+      "expires": {
+        "type": "boolean"
+      },
+      "start_month": {
+        "type": "string"
+      },
+      "start_year": {
+        "type": "string"
+      },
+      "end_month": {
+        "type": "string"
+      },
+      "end_year": {
+        "type": "string"
+      },
+      
+      "user_id": {
+        "type": "string"
+      }
+  }
+},
+
+  "editlocation": {
+      "required": ["city","state","country","user_id"],
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        
+        "user_id": {
+          "type": "string"
+        }
+    }
+  },
+
+  
+"editproject": {
+    "required": ["name","start_month","start_year","end_month","end_year","description","user_id"],
+    "properties": {
+      "name": {
+        "type": "boolean"
+      },
+      "start_month": {
+        "type": "string"
+      },
+      "start_year": {
+        "type": "string"
+      },
+      "end_month": {
+        "type": "string"
+      },
+      "end_year": {
+        "type": "string"
+      },
+      "project_url": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "user_id": {
+        "type": "string"
+      }
+  }
+},
+
+
+"editworkexperince": {
+    "required": ["title","employment_type","company","location","start_date","end_date","description","user_id"],
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "employment_type": {
+        "type": "string"
+      },
+      "company": {
+        "type": "string"
+      },
+      "location": {
+        "type": "string"
+      },
+      "start_date": {
+        "type": "string"
+      },
+      "end_date": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "user_id": {
+        "type": "string"
+      }
+  }
+},
+
+
+"editskills": {
+    "required": ["skill_name","user_id"],
+    "properties": {
+      "skill_name": {
+        "type": "boolean"
+      },
+      "user_id": {
+        "type": "string"
+      }
+  }
+},
+    "addMessage": {
+      "required": ["messageData","receiver_id"],
+      "properties": {
+        "messageData": {
+          "type": "string"
+        },
+        "receiver_id": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    },
+
+    "listMessage": {
+      "required": ["receiver_id"],
+      "properties": {
+        "receiver_id": {
+          "type": "string"
+        }
+      }
+    }
+
+
+  }
+}
+
